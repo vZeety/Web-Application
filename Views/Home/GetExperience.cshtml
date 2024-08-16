@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<table border="1">
+    <tr>
+        <th>ExperienceID</th>
+        <th>Company Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Description</th>
+        <th>Is New</th>
+        <th>Is Dirty</th>
+       
+    </tr>
+
+    @{
+
+        @foreach (var c in ViewBag.ListOfExperience)
+        {
+
+            <tr>
+                <td> @c.Experienceid</td>
+                <td> @c.CompanyName</td>
+                <td> @c.Startdate</td>
+                <td> @c.Enddate</td>
+                <th> @c.Description</th>
+                <td> @c.IsNew </td>
+                <td> @c.IsDirty </td>
+            </tr>
+
+        }
+
+
+    }
+</table>

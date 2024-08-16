@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<table border="1">
+    <tr>
+        <th>MyID</th>
+        <th>Name</th>
+        <th>Adress</th>
+        <th>Phone Number</th>
+        <th>Mail</th>
+        <th>Introduction</th>
+        <th>Is New</th>
+        <th>Is Dirty</th>
+        <th>In Active</th>
+        <th>Eduid</th>
+        <th>Skillid</th>
+        <th>Experienceid</th>
+    </tr>
+
+    @{
+
+        @foreach (var c in ViewBag.ListOfInfo)
+        {
+
+            <tr>
+                <td> @c.Myid</td>
+                <td> @c.Name </td>
+                <td> @c.Adress </td>
+                <td> @c.Phonenumber </td>
+                <th> @c.Mail</th>
+                <th> @c.Introduction</th>
+                <td> @c.IsNew </td>
+                <td> @c.IsDirty </td>
+                <td> @c.InActive </td>
+                <td> @c.Eduid</td>
+                <td> @c.Skillid</td>
+                <td> @c.Experienceid</td>
+            </tr>
+
+        }
+
+
+    }
+</table>
